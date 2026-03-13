@@ -1,0 +1,11 @@
+﻿{% extends 'articles/base.html' %}
+{% block title %}{% if form.instance.pk %}Редактирование{% else %}Новая статья{% endif %}{% endblock %}
+{% block content %}
+<h1>{% if form.instance.pk %}Редактирование статьи{% else %}Новая статья{% endif %}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить</button>
+</form>
+<p><a href="{% url 'article_list' %}">Отмена</a></p>
+{% endblock %}
