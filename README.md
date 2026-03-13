@@ -12,10 +12,3 @@
 ## Структура
 - `blog_project/` — проект Django
 - `articles/` — приложение статей
-
-## Запуск
-1. `python -m venv .venv`
-2. `source .venv/bin/activate` или `.venv\Scripts\activate`
-3. `pip install django`
-4. `python manage.py migrate`
-5. `python manage.py runserver`
