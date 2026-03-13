@@ -19,5 +19,3 @@
 3. `pip install django`
 4. `python manage.py migrate`
 5. `python manage.py runserver`
-
-Открыть: `http://127.0.0.1:8000/articles/`
